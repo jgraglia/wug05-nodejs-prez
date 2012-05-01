@@ -1,4 +1,7 @@
 var logsystem = exports; 
+
+winston = require('winston');
+
 logsystem.folder='./logs';
 logsystem.logger = new (winston.Logger)({
 		transports: [

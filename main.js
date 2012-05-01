@@ -1,32 +1,12 @@
-winston = require("winston");
 
-var logger = new (winston.Logger)({
-		transports: [
-			new winston.transports.File(
-				{ 
-					filename: './logs/all-logs.log', 
-					timestamp: true,
-					maxsize: 1000000 
-				}
-			),
-			new winston.transports.Console(
-				{
-					colorize:  true, 
-					timestamp: true, 
-					handleExceptions: true
-				}
-			)
-		],
-		exceptionHandlers: [
-			new winston.transports.File({ filename: './logs/exceptions.log', timestamp: true, maxsize: 1000000 })
-		],
-	exitOnError: true,
-	}
-);
+logsystem = require('./libs/logsystem'),
+    logger = logsystem.logger,
+    expert = require('./libs/expert');  
+    
+logger.info('Output folder: '+logsystem.folder);
+logger.log('info', 'Bonjour le monde!');
 
-
-
-logger.log("info", "Bonjour le monde!");
+logger.info('compute 4 & 6: '+expert.compute(4, 6));
 
 setTimeout( function () {
 		nonExistingFunction();
