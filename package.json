@@ -1,0 +1,10 @@
+{
+  "name": "WUG-05",
+  "preferGlobal": "true",
+  "version": "0.1.0",
+  "author": "Julien",
+  "description": "2 mai 2012",
+  "dependencies" : {
+    "winston"   :  "*"
+  }
+}
