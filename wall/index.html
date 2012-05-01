@@ -1,19 +1,15 @@
 <html>
 <head>
-<script src="http://localhost:8081/socket.io/socket.io.js"></script>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script>
-  var socket = io.connect('http://localhost:8081');
-  socket.on('news', function (data) {
-    $("#status").append("<p>"+new Date()+"::"+data.hello+"</p>");
-    //console.log(data);
-    //socket.emit('my other event', { my: 'data' });
-  });
-</script>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <script src="http://localhost:8081/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    
+    <script src="index.js"></script>
 </head>
 
 <body>
 Hi!
+<span id="tweets"></span>
 <p>
 Status: 
 <span id="status"></span>
