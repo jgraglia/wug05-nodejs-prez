@@ -5,6 +5,8 @@
   "author": "Julien",
   "description": "2 mai 2012",
   "dependencies" : {
-    "winston"   :  "*"
+    "winston"   :  "*",
+    "connect"   :  "*",
+    "socket.io":  "*"
   }
 }
