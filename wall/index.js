@@ -11,6 +11,7 @@ $(document).ready(function() {
             var tweetElt = $("<div>").addClass("tweet");
             $("<span>").addClass("label").append(tweet.created_at).appendTo(tweetElt);
             tweetElt.append(" :: ");
+            $("<img>").attr("src", tweet.profile_image_url).appendTo(tweetElt);
             $("<span>").addClass("label label-info").append(tweet.user).appendTo(tweetElt);
             tweetElt.append(" :: ");
             $("<span>").addClass("label").append(tweet.text).appendTo(tweetElt);

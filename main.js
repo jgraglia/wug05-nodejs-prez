@@ -43,7 +43,7 @@ twit.addListener('error', function(error) {
 
 twit
   .addListener('tweet', function(tweet) {
-    io.sockets.emit('tweet', { user: tweet.user.screen_name, followers_count: tweet.user.followers_count, created_at:tweet.created_at, text:tweet.text});
+    io.sockets.emit('tweet', { user: tweet.user.screen_name, profile_image_url: tweet.user.profile_image_url, followers_count: tweet.user.followers_count, created_at:tweet.created_at, text:tweet.text});
     //util.puts("@" + tweet.user.screen_name + ": " + tweet.text);
     //logger.info("@" + tweet.user.screen_name + ": " + tweet.text);
   })
