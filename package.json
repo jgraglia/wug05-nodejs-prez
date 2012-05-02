@@ -6,6 +6,10 @@
   "description": "2 mai 2012",
   "dependencies" : {
     "winston"   :  "*",
+    "metrics"   :  "*",
+    "commander"   :  "*",
+    "optimist"   :  "*",
+    "join"   :  "*",
     "connect"   :  "*",
     "socket.io":  "*"
   }
