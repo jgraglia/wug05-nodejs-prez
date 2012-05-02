@@ -11,6 +11,7 @@
     "optimist"   :  "*",
     "join"   :  "*",
     "connect"   :  "*",
+    "redis"   :  "*",
     "socket.io":  "*"
   }
 }

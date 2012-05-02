@@ -16,3 +16,4 @@ npm-debug.log
 .nide
 logs/**
 private
+redis-java/target/**
